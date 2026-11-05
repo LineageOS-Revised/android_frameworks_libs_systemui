@@ -45,9 +45,13 @@ constructor(
     val isPrivate: Boolean
         get() = type == UserType.PRIVATE
 
+    val isSandbox: Boolean
+        get() = type == UserType.SANDBOX
+
     fun applyBitmapInfoFlags(op: FlagOp): FlagOp =
         op.setFlag(BitmapInfo.FLAG_WORK, isWork)
             .setFlag(BitmapInfo.FLAG_CLONE, isCloned)
             .setFlag(BitmapInfo.FLAG_PRIVATE, isPrivate)
             .setFlag(BitmapInfo.FLAG_SYSTEM_HEADLESS, isSystemHeadless)
+            .setFlag(BitmapInfo.FLAG_SANDBOX, isSandbox)
 }

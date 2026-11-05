@@ -674,7 +674,7 @@ constructor(
 
         // Ensures themed bitmaps in the icon cache are invalidated
         // LINT.IfChange(cache_release_version)
-        @JvmField val RELEASE_VERSION = if (Flags.enableLauncherIconShapes()) 14 else 12
+        @JvmField val RELEASE_VERSION = if (Flags.enableLauncherIconShapes()) 15 else 13
         // LINT.ThenChange()
 
         @JvmField val TABLE_NAME = "icons"

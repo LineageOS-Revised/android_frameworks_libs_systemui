@@ -94,6 +94,7 @@ interface BadgeProvider {
         WORK("work", R.drawable.ic_work_app_badge, R.color.badge_tint_work),
         CLONE("clone", R.drawable.ic_clone_app_badge, R.color.badge_tint_clone),
         PRIVATE("private", R.drawable.ic_private_profile_app_badge, R.color.badge_tint_private),
+        SANDBOX("sandbox", R.drawable.ic_sandbox_app_badge, R.color.badge_tint_sandbox),
         SYSTEM_HEADLESS(
             "system_headless",
             R.drawable.ic_system_headless_app_badge,

@@ -27,4 +27,5 @@ enum class UserType : Parcelable {
     CLONED,
     PRIVATE,
     SYSTEM_HEADLESS,
+    SANDBOX,
 }

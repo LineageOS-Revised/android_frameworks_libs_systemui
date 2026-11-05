@@ -60,6 +60,7 @@ data class BitmapInfo(
                 FLAG_PRIVATE,
                 FLAG_FULL_BLEED,
                 FLAG_SYSTEM_HEADLESS,
+                FLAG_SANDBOX,
             ],
     )
     internal annotation class BitmapInfoFlags
@@ -165,6 +166,7 @@ data class BitmapInfo(
             flags.hasMask(FLAG_WORK) -> BadgeType.WORK
             flags.hasMask(FLAG_CLONE) -> BadgeType.CLONE
             flags.hasMask(FLAG_PRIVATE) -> BadgeType.PRIVATE
+            flags.hasMask(FLAG_SANDBOX) -> BadgeType.SANDBOX
             flags.hasMask(FLAG_SYSTEM_HEADLESS) -> BadgeType.SYSTEM_HEADLESS
             else -> null
         }
@@ -197,6 +199,7 @@ data class BitmapInfo(
         const val FLAG_PRIVATE: Int = 1 shl 3
         const val FLAG_FULL_BLEED: Int = 1 shl 4
         const val FLAG_SYSTEM_HEADLESS: Int = 1 shl 5
+        const val FLAG_SANDBOX: Int = 1 shl 6
         // LINT.ThenChange(cache/BaseIconCache.kt:cache_release_version)
 
         // Drawable creation flags
